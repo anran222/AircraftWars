@@ -35,6 +35,7 @@ public class GameObject {
         this.height = height;
     }
     public void drawMyself(Graphics g){
+
         g.drawImage(img,(int)x,(int)y,width,height,null);
     }
     //所有的物体都是矩形

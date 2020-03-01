@@ -35,11 +35,11 @@ public class MygameFrame extends Frame {
                 System.exit(0);//正常退出程序
             }
         });
-        new PlaneThread().start();//启动重画窗口的线程
+        new PaintThread().start();//启动重画窗口的线程
     }
 
     //定义一个重画窗口的线程
-    class PlaneThread extends Thread{
+    class PaintThread extends Thread{
         @Override
         public void run() {
             while (true){
